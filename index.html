@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Luxury Hotel | Отель класса люкс</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo"><h1><i class="bi bi-building"></i> <span id="brandText">Grand Luxury</span></h1></div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home" id="navHome">Главная</a></li>
+            <li><a href="#rooms" id="navRooms">Номера</a></li>
+            <li><a href="#services" id="navServices">Услуги</a></li>
+            <li><a href="#restaurantBooking" id="navRestaurant">Ресторан</a></li>
+            <li><a href="#contact" id="navContact">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="lang-selector">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="tr">TR</button>
+    </div>
+</header>
+
+<section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title" id="heroTitle">Grand Luxury</h1>
+        <p class="hero-text" id="heroText">Изысканность и комфорт в самом сердце города</p>
+        <a href="#restaurantBooking" class="btn-gradient" id="heroBtn"><i class="bi bi-calendar-check"></i> Забронировать столик</a>
+    </div>
+</section>
+
+<main class="content">
+    <section class="features">
+        <h2 class="gradient-text" id="whyUsTitle">Почему выбирают нас</h2>
+        <div class="features-grid">
+            <div class="feature-card"><i class="bi bi-building icon-main"></i><h3 id="feature1Title">Президентский люкс</h3><p id="feature1Text">Просторные апартаменты с панорамным видом</p></div>
+            <div class="feature-card"><i class="bi bi-star-fill icon-main"></i><h3 id="feature2Title">Ресторан высокой кухни</h3><p id="feature2Text">Авторская кухня от шеф-повара</p></div>
+            <div class="feature-card"><i class="bi bi-flower2 icon-main"></i><h3 id="feature3Title">Спа-комплекс</h3><p id="feature3Text">Хаммам, массаж, процедуры</p></div>
+            <div class="feature-card"><i class="bi bi-water icon-main"></i><h3 id="feature4Title">Панорамный бассейн</h3><p id="feature4Text">С подогревом и видом на город</p></div>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms-section">
+        <h2 class="gradient-text" id="roomsTitle">Наши номера</h2>
+        <div class="rooms-grid">
+            <div class="room-card"><img src="images/1.jpg" class="room-img"><h3 id="room1Title">Стандарт</h3><p id="room1Desc">Уютный номер для двоих</p><div class="price">от 15 000 ₽</div></div>
+            <div class="room-card"><img src="images/2.jpg" class="room-img"><h3 id="room2Title">Люкс</h3><p id="room2Desc">Гостиная и спальня, вид на море</p><div class="price">от 30 000 ₽</div></div>
+            <div class="room-card"><img src="images/3.jpg" class="room-img"><h3 id="room3Title">Президентский</h3><p id="room3Desc">200 м², терраса, джакузи</p><div class="price">от 80 000 ₽</div></div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2 class="gradient-text" id="servicesTitle">Услуги и удобства</h2>
+        <div class="services-grid">
+            <div class="accordion" id="servicesAccordion">
+                <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1"><i class="bi bi-car-front-fill me-2"></i> <span id="serv1Title">Трансфер и консьерж</span></button></h2><div id="c1" class="accordion-collapse collapse show"><div class="accordion-body" id="serv1Text">Встреча в аэропорту на автомобилях премиум-класса. Индивидуальные экскурсии.</div></div></div>
+                <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2"><i class="bi bi-cup-straw me-2"></i> <span id="serv2Title">Рестораны и бары</span></button></h2><div id="c2" class="accordion-collapse collapse"><div class="accordion-body" id="serv2Text">Три ресторана: итальянская кухня, японский гастро-бар, лобби-бар с авторскими коктейлями.</div></div></div>
+                <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3"><i class="bi bi-flower2 me-2"></i> <span id="serv3Title">Спа и wellness</span></button></h2><div id="c3" class="accordion-collapse collapse"><div class="accordion-body" id="serv3Text">Хаммам, сауна, массажный кабинет, стоун-терапия.</div></div></div>
+            </div>
+            <div class="table-wrapper">
+                <h3 class="table-title"><i class="bi bi-table"></i> Сравнение категорий номеров</h3>
+                <div class="table-responsive">
+                    <table class="custom-table">
+                        <thead><tr><th>Категория</th><th>Площадь</th><th>Вид</th><th>Консьерж</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Президентский</strong></td><td>200 м²</td><td>Панорамный</td><td><i class="bi bi-check-lg text-success"></i> Да</td></tr>
+                            <tr><td><strong>Люкс</strong></td><td>85 м²</td><td>Море/город</td><td><i class="bi bi-check-lg text-success"></i> Да</td></tr>
+                            <tr><td><strong>Полулюкс</strong></td><td>60 м²</td><td>Городской</td><td><i class="bi bi-x-lg text-danger"></i> Нет</td></tr>
+                            <tr><td><strong>Стандарт</strong></td><td>45 м²</td><td>Внутренний двор</td><td><i class="bi bi-x-lg text-danger"></i> Нет</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurantBooking" class="restaurant-booking-section">
+        <h2 class="gradient-text" id="restTitle">Заказ столика в ресторане</h2>
+        <div class="restaurant-grid">
+            <div class="restaurant-map">
+                <svg viewBox="0 0 500 400" class="svg-restaurant" id="restaurantSvg">
+                    <rect x="10" y="10" width="480" height="380" fill="#e8dccc" rx="15" stroke="#b59a6b" stroke-width="2"/>
+                    <text x="250" y="40" text-anchor="middle" font-weight="bold" fill="#5d3a1a" id="mapTitle">GRAND LUXURY RESTAURANT</text>
+                    <g class="table-group" data-table-id="t1" data-booked="false"><rect x="60" y="80" width="70" height="70" rx="12" class="free-table" /><text x="95" y="115" text-anchor="middle" font-size="12" fill="#333">1</text></g>
+                    <g class="table-group" data-table-id="t2" data-booked="false"><rect x="200" y="80" width="70" height="70" rx="12" class="free-table" /><text x="235" y="115" text-anchor="middle" font-size="12" fill="#333">2</text></g>
+                    <g class="table-group" data-table-id="t3" data-booked="false"><rect x="350" y="80" width="70" height="70" rx="12" class="free-table" /><text x="385" y="115" text-anchor="middle" font-size="12" fill="#333">3</text></g>
+                    <g class="table-group" data-table-id="t4" data-booked="false"><rect x="60" y="220" width="70" height="70" rx="12" class="free-table" /><text x="95" y="255" text-anchor="middle" font-size="12" fill="#333">4</text></g>
+                    <g class="table-group" data-table-id="t5" data-booked="false"><rect x="200" y="220" width="70" height="70" rx="12" class="free-table" /><text x="235" y="255" text-anchor="middle" font-size="12" fill="#333">5</text></g>
+                    <g class="table-group" data-table-id="t6" data-booked="false"><rect x="350" y="220" width="70" height="70" rx="12" class="free-table" /><text x="385" y="255" text-anchor="middle" font-size="12" fill="#333">6</text></g>
+                    <g class="table-group" data-table-id="t7" data-booked="false"><rect x="130" y="310" width="70" height="70" rx="12" class="free-table" /><text x="165" y="345" text-anchor="middle" font-size="12" fill="#333">7</text></g>
+                </svg>
+                <p class="mt-2" id="mapHint"><i class="bi bi-info-circle"></i> Нажмите на свободный столик (зеленый) для выбора</p>
+            </div>
+            <div class="booking-form">
+                <form id="tableBookingForm">
+                    <input type="text" id="guestName" class="form-control" placeholder="ФИО гостя" required>
+                    <input type="text" id="roomNumber" class="form-control" placeholder="Номер комнаты проживания" required>
+                    <input type="date" id="bookingDate" class="form-control" required>
+                    <input type="time" id="bookingTime" class="form-control" required>
+                    <input type="text" id="selectedTableDisplay" class="form-control" placeholder="Выбранный столик" readonly>
+                    <button type="submit" class="btn-gradient" id="bookTableBtn"><i class="bi bi-check2-circle"></i> Забронировать столик</button>
+                </form>
+                <div id="animationContainer" class="mt-3 text-center" style="min-height: 100px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="booking-section">
+        <h2 class="gradient-text" id="contactTitle">Контакты</h2>
+        <div class="booking-grid">
+            <div><p><i class="bi bi-telephone-fill"></i> +7 (999) 123-45-67</p><p><i class="bi bi-envelope-paper-fill"></i> info@grandluxury.ru</p><p><i class="bi bi-geo-alt-fill"></i> <span id="footerAddress">ул. Пальмовая, д. 1</span></p></div>
+            <div class="booking-form"><form><input type="text" id="contactName" class="form-control" placeholder="Ваше имя"><input type="email" id="contactEmail" class="form-control" placeholder="Email"><button type="button" class="btn-gradient" id="sendBtn">Отправить запрос</button></form></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p><i class="bi bi-building"></i> Grand Luxury Hotel | <span id="footerAddress2">ул. Пальмовая, 1</span> | +7 (999) 123-45-67</p>
+    <p>&copy; 2026 <span id="rightsText">Все права защищены</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
